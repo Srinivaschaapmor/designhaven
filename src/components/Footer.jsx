@@ -8,8 +8,7 @@ const Footer = () => {
             <div className="footer-logo">
               <img
                 loading="lazy"
-                src=" src\assets\Logo.png"
-               
+                src="src\assets\Logo.png"
                 className="footer-logo-image"
               />
               <p

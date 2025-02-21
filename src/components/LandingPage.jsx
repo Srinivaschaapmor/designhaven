@@ -1,18 +1,10 @@
 import "../styles/landingPage.css";
 import OurBestSeller from "./OurBestSeller";
 
-
 const LandingPage = () => {
-
-
-
-
-
   return (
-
     <>
-     
-     <div style={{paddingLeft: "3%", paddingRight: "3%"}}>
+      <div style={{ paddingLeft: "3%", paddingRight: "3%" }}>
         {/* <!-- HERO SECTION -->
         <!--  --> */}
         <div className="hero-section">
@@ -33,50 +25,49 @@ const LandingPage = () => {
               <div className="carousel-item active">
                 <img
                   className="d-block"
-                  src="src\assets\Hero Section Images\1.jpeg"
+                  src="src\assets\Hero-Section-Images\1.jpeg"
                   alt="First slide"
-                  
                 />
               </div>
               <div className="carousel-item">
                 <img
                   className="d-block"
-                  src="src\assets\Hero Section Images\2.jpeg"
+                  src="src\assets\Hero-Section-Images\2.jpeg"
                   alt="Second slide"
                 />
               </div>
               <div className="carousel-item">
                 <img
                   className="d-block"
-                  src="src\assets\Hero Section Images\3.jpeg"
+                  src="src\assets\Hero-Section-Images\3.jpeg"
                   alt="Second slide"
                 />
               </div>
               <div className="carousel-item">
                 <img
                   className="d-block"
-                  src="src\assets\Hero Section Images\4.jpeg"
+                  src="src\assets\Hero-Section-Images\4.jpeg"
                   alt="Second slide"
                 />
               </div>
               <div className="carousel-item">
                 <img
                   className="d-block"
-                  src="src\assets\Hero Section Images\5.jpeg"
+                  src="src\assets\Hero-Section-Images\5.jpeg"
                   alt="Second slide"
                 />
               </div>
               <div className="carousel-item">
                 <img
                   className="d-block"
-                  src="src\assets\Hero Section Images\6.jpeg"
+                  src="src\assets\Hero-Section-Images\6.jpeg"
                   alt="Second slide"
                 />
               </div>
               <div className="carousel-item">
                 <img
                   className="d-block"
-                  src="src\assets\Hero Section Images\7.jpeg"
+                  src="src\assets\Hero-Section-Images\7.jpeg"
                   alt="Second slide"
                 />
               </div>
@@ -100,52 +91,48 @@ const LandingPage = () => {
         <section className="carosouel-blinds-container">
           <div className="carosouel-image-grid">
             <div className="carosouel-image-row">
-              <div
-                className="carosouel-image-column image-slider carosouel-product-image"
-              >
+              <div className="carosouel-image-column image-slider carosouel-product-image">
                 <img
                   loading="lazy"
-                  src="src\assets\Body\shades\image 1.png"
+                  src="src\assets\Body\shades\image-1.png"
                   alt="Blinds product image 1"
-                /> 
+                />
                 <img
                   loading="lazy"
-                  src="src/assets/Body/drapery/image 1.png"
+                  src="src/assets/Body/drapery/image-1.png"
                   alt="Blinds product image 2"
                 />
                 <img
                   loading="lazy"
-                  src="src/assets/Body/closet/image 5.png"
+                  src="src/assets/Body/closet/image-5.png"
                   alt="Blinds product image 3"
                 />
                 <img
                   loading="lazy"
-                  src="src/assets/Body/design/image 5.png"
+                  src="src/assets/Body/design/image-5.png"
                   alt="Blinds product image 4"
                 />
               </div>
 
-              <div
-                className="carosouel-image-column image-slider carosouel-product-image"
-              >
+              <div className="carosouel-image-column image-slider carosouel-product-image">
                 <img
                   loading="lazy"
-                  src="src\assets\Body\shades\image 2.png"
+                  src="src\assets\Body\shades\image-2.png"
                   alt="shades product image 1"
                 />
                 <img
                   loading="lazy"
-                  src="src/assets/Body/drapery/image 2.png"
+                  src="src/assets/Body/drapery/image-2.png"
                   alt="shades product image 2"
                 />
                 <img
                   loading="lazy"
-                  src="src/assets/Body/closet/image 6.png"
+                  src="src/assets/Body/closet/image-6.png"
                   alt="shades product image 3"
                 />
                 <img
                   loading="lazy"
-                  src="src/assets/Body/design/image 6.png"
+                  src="src/assets/Body/design/image-6.png"
                   alt="shades product image 4"
                 />
               </div>
@@ -162,16 +149,15 @@ const LandingPage = () => {
         <h3 className="tagline">
           “Upscale designs, unmatched prices - your vision your budget!”
         </h3>
-        <h2 className="tagline-text">OUR BEST SELLERS</h2>
+        <h2 className="tagline-text">Our Best Sellers</h2>
         {/* <!-- style="padding-left: 5%; padding-right: 5%" -->
         <!-- best seller --> */}
-     
+
         <OurBestSeller />
         {/* <!-- ##### --> */}
         <div className="separator"></div>
       </div>
     </>
-   
   );
 };
 
