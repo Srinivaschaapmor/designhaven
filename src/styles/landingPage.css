@@ -1,0 +1,357 @@
+.hero-section {
+    /* height: 65vh; */
+    background-color: #d7d3ce;
+    margin-top: 2%;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .hero-text-1 {
+    color: black;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: "Albert Sans";
+  }
+
+  .hero-text-2 {
+    color: black;
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Montserrat";
+  }
+
+  .carousel-item img {
+    width: 65%;
+    height: 400px;
+    object-fit: cover;
+    /* border-radius: 20px; */
+  }
+
+  .carosouel-blinds-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    /* height: 100vh; */
+    /* background-color: aqua; */
+  }
+  
+  .carosouel-image-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .carosouel-image-row {
+    gap: 20px;
+    display: flex;
+  }
+  
+  .carosouel-image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 50%;
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  
+  .carosouel-image-column:last-child {
+    margin-left: 20px;
+  }
+
+  .carosouel-product-image {
+    max-width: 100%;
+    margin-top: 40px;
+    max-width: 100%; /* Reduce overall image size */
+    height: 450px; /* Maintain aspect ratio */
+    aspect-ratio: 1; /* Ensure square ratio if needed */
+    object-fit: contain;
+  }
+
+  .carosouel-section-header {
+    align-self: center;
+    display: flex;
+    /* margin-top: 96px; */
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    min-height: 36px;
+    width: 230px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    position: relative;
+    margin-top: 40px;
+  }
+  
+ 
+  
+  
+  /* /////////// */
+  .image-slider {
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    overflow: hidden;
+    /* background-color: aqua; */
+    align-items: center;
+    height: 50%;
+  }
+  
+  .image-slider img {
+    /* object-fit: cover; */
+    width: 450px;
+    height: 100%;
+    align-items: center;
+    /* min-height: 700px; Adjust height as needed */
+    position: absolute;
+    /* border: 3px solid; */
+    /* top: 0; */
+    /* left: 0; */
+    opacity: 0;
+    animation: slide 12s infinite;
+  }
+  
+  
+  
+  .image-slider img:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .image-slider img:nth-child(2) {
+    animation-delay: 3s;
+  }
+  .image-slider img:nth-child(3) {
+    animation-delay: 6s;
+  }
+  .image-slider img:nth-child(4) {
+    animation-delay: 9s;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    8.33% {
+      opacity: 1;
+    } /* Image fully appears */
+    33.33% {
+      opacity: 1;
+    } /* Hold image for 3 seconds */
+    41.66% {
+      opacity: 0;
+    } /* Start fading out */
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .carosouel-section-title {
+    font-family: "Montserrat";
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0.7;
+    width: 100%;
+    /* padding: 0 22px; */
+    position: absolute;
+    white-space: normal;
+  }
+  
+  .carosouel-section-title {
+    position: absolute;
+    opacity: 0;
+    animation: textCycle 12s infinite;
+  }
+  
+  /* Keyframes to cycle through the texts */
+  @keyframes textCycle {
+    0% {
+      opacity: 0;
+    }
+    8.33% {
+      opacity: 1;
+    } /* Text fully appears */
+    33.33% {
+      opacity: 0;
+    } /* Hold text for 3 seconds */
+    41.66% {
+      opacity: 0;
+    } /* Start fading out */
+    100% {
+      opacity: 0;
+    } /* Ensure it's fully gone */
+  }
+  
+  /* Specific delay for each text */
+  .carosouel-section-title:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .carosouel-section-title:nth-child(2) {
+    animation-delay: 3s;
+  }
+  .carosouel-section-title:nth-child(3) {
+    animation-delay: 6s;
+  }
+  .carosouel-section-title:nth-child(4) {
+    animation-delay: 9s;
+  }
+  
+  /* best seller */
+  .bestsellers-carousel-section {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  /*  */
+  
+  .bestsellers-carousel-title {
+    font-size: 24px;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+  }
+  
+  /* bestsellers-Carousel Container */
+  .bestsellers-carousel {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .bestsellers-carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+  .bestsellers-carousel-item {
+    width: 300px;
+    margin-right: 20px;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  
+  .bestsellers-carousel-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .bestsellers-carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .bestsellers-carouselItem-caption {
+    text-align: left;
+    margin-top: 8px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #424242;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+    pointer-events: auto;
+  }
+  
+  /* Navigation Buttons */
+  
+  .bestsellers-carousel-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0px;
+    margin-right: 550px;
+  }
+  
+  .bestsellers-carousel-nav .prev {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .bestsellers-carousel-nav .next {
+    right: 0;
+  }
+  
+  .bestsellers-carousel-nav .next {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 16px;
+  }
+  
+  /* Styling for Arrows */
+  .bestsellers-carousel-button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .bestsellers-carousel-button:focus {
+    outline: none;
+  }
+  .bestsellers-carousel-button svg {
+    width: 12px;
+    height: 20px;
+  }
+
+  .main-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 28px;
+    /* max-width: 1309px; */
+    color: #000;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 300;
+    /* font: 400 36px Alexandria, sans-serif; */
+    font-family: "Montserrat";
+  }
+
+
+  .tagline {
+    color: #000;
+    text-align: center;
+    text-transform: capitalize;
+  
+    font-weight: 300;
+    /* font: 300 30px/2 "Amiri Quran", sans-serif; */
+    font-family: "Montserrat";
+  }
+  .tagline-text {
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Albert Sans";
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .separator {
+    min-height: 7px;
+    margin-top: 77px;
+    width: 100%;
+  }
